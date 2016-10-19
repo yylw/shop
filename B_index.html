@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>找宝贝</title>
+	<meta http-equiv="X-UA_Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="email=no"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/reset.css">	
+	<link rel="stylesheet" href="css/B_style.css">
+</head>
+<style>
+	html,body,.box{
+		width:100%;
+		height: 100%;
+	}
+	.box{
+		display: -webkit-box;
+		-webkit-box-orient:vertical;
+		overflow: hidden;
+	}
+	.box header{
+		width: 100%;
+		height: 48px;
+		background: #33d6ff;
+		position: relative;
+	}
+	.box header a:first-of-type{
+		width: 60px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		color: #fff;
+		background: url(images/1.png) no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		left: 10px;
+		top:10px;
+	}
+	.box header h2{
+		padding:0 53px;
+		font-size:18px;
+		color:#fff;
+		text-align:center;
+		line-height:48px;
+		font-weight:normal;
+		text-shadow:1px 1px 1px #000;
+		text-overflow:ellipsis;
+		overflow:hidden;
+		white-space:nowrap;
+	}
+	.box header a:last-of-type{
+		width: 60px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		color: #fff;
+		background: url(images/1.png) no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		right: 10px;
+		top:10px;
+	}
+	.box .main{
+		-webkit-box-flex:1;
+		width:100%;
+	}
+	.box .footer{
+		width: 100%;
+		height: 50px;
+		background: #343434;
+		position: relative;
+		z-index: 5;
+	}
+	.box .footer ul{
+		display: -webkit-box;
+		line-height: 50px;
+		position: relative;
+		z-index: 2;
+	}
+	.box .footer ul li{
+		width: 20%;
+		text-align: center;
+		padding-top: 10px;
+	}
+	.box .footer ul li i{
+		color: #fff;
+		font-size: 16px;
+		font-weight: normal;
+		display: block;
+	}
+	.box .footer ul li a{
+		color: #fff;
+		font-size: 14px;
+	}
+	.box .footer ul .on i{
+		color: #33b6be;
+	}
+	.box .footer ul .on{
+		background: #494949;
+	}
+</style>
+<body  ng-controller="ctrl">
+	<div class="box">
+		<!-- <header>
+			<a href="#">二维码</a>
+			<h2>购霸</h2>
+			<a href="#">搜素</a>
+		</header> -->
+
+		<section class="main" id="content">
+			<!-- 找宝贝 -->
+			<div id="find_best">
+				<div id="left">
+					<aside>
+						<ul id="menu"  ng-controller="ctrl">
+							<a ui-sref=".recommend" class="high">推荐</a>
+							<a ui-sref=".newest">最新</a>
+							<a ui-sref=".skirt">裙子</a>
+							<a ui-sref=".pants">裤子</a>
+							<a ui-sref=".shoes">鞋子</a>
+							<a ui-sref=".bag">包包</a>
+							<a ui-sref=".decorate">饰品</a>
+							<a ui-sref=".jacket">上衣</a>
+						</ul>
+					</aside>
+				</div>
+				<div id="right">
+					<input type="text"  id="search">
+					<section id="data_goods" ui-view></section>
+				</div>
+			</div>
+		</section>
+
+	
+	</div>
+</body>
+</html>
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-ui-router.min.js"></script>
+<script src="lib/jquery.2.1.4.min.js"></script>
+<script>
+	;(function($){
+		$(".footer ul").on("click","li",function(){
+			var index=$(this).index();
+			$(this).addClass('on').siblings().removeClass("on");
+		})
+		
+	})(jQuery);
+
+	$(function(){
+		$("#menu").on("click","a",function(){
+			alert(1)
+			$(this).addClass("high").siblings("a").removeClass("high");
+			
+		})
+	})
+</script>
+<script>
+	/*var myApp=angular.module('myApp',['ui.router']);
+	myApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider) {
+   
+        $urlRouterProvider.otherwise('/recommend');
+        
+        $stateProvider
+              
+
+    
+	}]);
+
+
+	//定义控制器
+	myApp.controller('ctrl',['$scope',function($scope) {
+	    
+	}]);*/
+
+</script>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA_Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="email=no"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/reset.css">	
+	<link rel="stylesheet" href="css/astyle.css">
+</head>
+<style>
+	html,body,.box{
+		width:100%;
+		height: 100%;
+	}
+	*{
+		box-sizing:border-box;
+	}
+	.box{
+		display: -webkit-box;
+		-webkit-box-orient:vertical;
+		overflow: hidden;
+	}
+	.box header{
+		width: 100%;
+		height: 48px;
+		background: #33d6ff;
+		position: relative;
+	}
+	.box header a:first-of-type{
+		width: 60px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		color: #fff;
+		background: url(images/1.png) no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		left: 10px;
+		top:10px;
+	}
+	.box header h2{
+		padding:0 53px;
+		font-size:18px;
+		color:#fff;
+		text-align:center;
+		line-height:48px;
+		font-weight:normal;
+		text-shadow:1px 1px 1px #000;
+		text-overflow:ellipsis;
+		overflow:hidden;
+		white-space:nowrap;
+	}
+	.box header a:last-of-type{
+		width: 60px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		color: #fff;
+		background: url(images/1.png) no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		right: 10px;
+		top:10px;
+	}
+	.box .main{
+		-webkit-box-flex:1;
+	}
+	.box .footer{
+		width: 100%;
+		height: 50px;
+		background: #343434;
+		position: relative;
+		z-index: 5;
+	}
+	.box .footer ul{
+		display: -webkit-box;
+		line-height: 50px;
+		position: relative;
+		z-index: 2;
+	}
+	.box .footer ul li{
+		width: 20%;
+		text-align: center;
+		padding-top: 10px;
+	}
+	.box .footer ul li i{
+		color: #fff;
+		font-size: 16px;
+		font-weight: normal;
+		display: block;
+	}
+	.box .footer ul li a{
+		color: #fff;
+		font-size: 14px;
+	}
+	.box .footer ul .on i{
+		color: #33b6be;
+	}
+	.box .footer ul .on{
+		background: #494949;
+	}
+	.aMain{
+		width: 90%;
+		margin: auto;
+	}
+	.aMainCon{
+		border: 1px solid #e4e4e4;
+		box-shadow: 0 0 10px #e4e4e4;
+		margin: 1rem 0;
+	}
+	.aMainCon ul li {
+		border-bottom: 1px solid #ccc;
+		line-height: 3.5rem;
+		margin: 0 1rem;
+	}
+	.aMainCon ul li.anone {
+		border:none;
+	}
+	.aMain .saveInfo{
+		width: 100%;
+		background: #f2f1f1;
+		color: #999999;
+		height: 3.5rem;
+		margin-bottom: .7rem;
+	}
+	.aMain .shopping{
+		width: 100%;
+		color: #33d6ff;
+		height: 3.5rem;
+	}
+	.box .footer{
+		background: #fff;
+		border-top: 1px solid #dfdede;
+	}
+	.footer .ap{
+		width: 100%;
+		height: 50px;
+		padding: 0 1rem;
+		color: #33d6ff;
+		position: relative;
+		line-height: 50px;
+	}
+	.footer .ap button{
+		float: right;
+		color: #fff;
+		background: #33d6ff;
+		padding: .5rem;
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+	}
+	.ImgBox{
+		width: 100%;
+	}
+	.ImgBox img{
+		width: 100%;
+	}
+	.pColor{
+		color: #33d6ff;
+	}
+	.ImgBox p{
+		padding-top: .3rem;
+	}
+	.footer{
+		line-height: 50px;
+		text-align: center;
+	}
+	.footer .liji{
+		width: 30%;
+		height: 30px;
+		border-radius: 3rem;
+		background: #33d6ff;
+		margin-right: .5rem;
+	}
+	.footer .jiaru{
+		width: 30%;
+		height: 30px;
+		border-radius: 3rem;
+		background: #fa9636;
+	}
+</style>
+<body>
+	<div class="box">
+		<header>
+			<a href="A_1.html">返回</a>
+			<h2>订单确认</h2>
+			<!-- <a href="#">搜素</a> -->
+		</header>
+
+		<section class="main">
+			
+			<div class="ImgBox">
+				<img src="images/30_02.png" alt="">
+				<p>学生清新名媛波点包臀短裙2014新款夏装大码短袖女裙雪纺女连衣裙</p>
+				<p class="pColor">价格：153.00</p>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<button class="liji"><a href="eindex2.html">立即购买</a></button>
+			<button class="jiaru"><a href="f1.html">加入购物车</a></button>
+		</footer>
+	</div>
+</body>
+</html>
+<script src="lib/jquery.2.1.4.min.js"></script>
+<script>
+	;(function($){
+		$(".footer ul").on("click","li",function(){
+			var index=$(this).index();
+			$(this).addClass('on').siblings().removeClass("on");
+		})
+		
+	})(jQuery)
+</script>

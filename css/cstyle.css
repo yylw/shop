@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+.full {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.header {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  background: #33d6ff;
+  position: relative;
+}
+.header .leftBtn {
+  float: left;
+  padding: 0 10px;
+}
+.header .leftBtn input {
+  width: 50px;
+  height: 25px;
+  color: #fff;
+  background: #42d1f6;
+  border-radius: 5px;
+  line-height: 25px;
+  text-align: center;
+  outline: none;
+  border: none;
+  box-shadow: 1px 2px 2px #1485a1;
+}
+.header .title {
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  top: 0;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  font-weight: normal;
+}
+.header .rightBtn {
+  float: right;
+  padding: 0 10px;
+}
+.header .rightBtn input {
+  width: 50px;
+  height: 25px;
+  color: #fff;
+  background: #42d1f6;
+  border-radius: 5px;
+  line-height: 25px;
+  text-align: center;
+  outline: none;
+  border: none;
+  box-shadow: 1px 2px 2px #1485a1;
+}
+.contain {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+.contain .con {
+  width: 90%;
+  margin-top: 18px;
+  margin-left: 5%;
+  border: 1px solid #ccc;
+}
+.contain .con li {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #e3e1e1;
+  background: #fff;
+  padding: 0 15px;
+  font-size: 12px;
+  color: #666;
+}
+.contain .con li:last-child {
+  border-bottom: none;
+}
+.contain .bangding_con input {
+  float: right;
+  margin: 15px 5px 0 0;
+}
+.contain .address_con li {
+  color: #33d6ff;
+}
+.contain .address_con input {
+  border: none;
+  outline: none;
+}
+.contain .yijian_con {
+  width: 90%;
+}
+.contain .yijian_con .textarea {
+  width: 100%;
+  height: 200px;
+  color: #666;
+  background: #fff;
+  padding: 15px;
+  line-height: 20px;
+  border: none;
+}
+.contain .erweima_con {
+  margin-top: 50px;
+  border: none;
+}
+.contain .erweima_con dl {
+  width: 100%;
+}
+.contain .erweima_con dl dt {
+  width: 80%;
+  margin-left: 10%;
+  height: 240px;
+  position: relative;
+}
+.contain .erweima_con dl dt .wei1 {
+  width: 86%;
+  position: absolute;
+  left: 7%;
+  top: 7%;
+  z-index: 2;
+}
+.contain .erweima_con dl dt .wei2 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.contain .erweima_con dl dd {
+  font-size: 12px;
+  text-align: center;
+  color: #777;
+  margin-top: 15px;
+}
+.contain .denglu_con {
+  width: 90%;
+  height: auto;
+  border: none;
+}
+.contain .denglu_con ul {
+  border: 1px solid #ccc;
+}
+.contain .denglu_con ul li {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+}
+.contain .denglu_con ul li span {
+  float: left;
+  width: 20px;
+  height: 100%;
+  margin-right: 10px;
+}
+.contain .denglu_con ul li span img {
+  width: 90%;
+  margin-top: 10px;
+}
+.contain .denglu_con ul li input {
+  float: left;
+  border: none;
+  outline: none;
+  height: 44px;
+  line-height: 44px;
+}
+.contain .denglu_con .denglu_btn {
+  width: 100%;
+  height: 30px;
+  background: #33d6ff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 14px;
+}
+.contain .denglu_con .btn_txt {
+  color: #777;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.contain .denglu_con .btn_txt .btn_left {
+  float: left;
+}
+.contain .denglu_con .btn_txt .btn_right {
+  float: right;
+}
+.contain .shezhi_con {
+  border: none;
+}
+.contain .shezhi_con ul {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+.contain .shezhi_con ul li span.span_next {
+  float: right;
+}
+.contain .shezhi_con ul li span.span_next img {
+  width: 60%;
+}
+.contain .shezhi_con ul li span.kaiqi {
+  color: #33d6ff;
+}

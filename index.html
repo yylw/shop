@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA_Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+</head>
+<style>
+	* {
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+	}
+	.w {
+	  width: 100%;
+	  height: 100%;
+	}
+	body,
+	html,
+	.box {
+	  width: 100%;
+	  height: 100%;
+	}
+	.box {
+	  overflow: hidden;
+	  position: relative;
+	}
+	.box ul {
+	  height: 100%;
+	  display: -webkit-box;
+	}
+	.box ul li img {
+	  width: 100%;
+	  height: 100%;
+	}
+	.box p {
+	  position: absolute;
+	  width: 20%;
+	  height: 7%;
+	  left: 41%;
+	  bottom: 0;
+	}
+	.box p span {
+	  display: inline-block;
+	  width: 10px;
+	  height: 10px;
+	  border-radius: 50%;
+	  background: #fff;
+	}
+	.box p .on {
+	  background: #ff6b9e;
+	}
+
+</style>
+<body>
+	<div class="box" id="box">
+		<ul id="content">
+			<li><img src="images/f1.png"></li>
+			<li><img src="images/f2.png"></li>
+			<li><a href="cdenglu.html"><img src="images/f3.png"></a></li>
+		</ul>
+		<p id="nav">
+			<span class="on"></span>
+			<span></span>
+			<span></span>
+		</p>
+	</div>
+</body>
+</html>
+<script src="lib/zepto.min.js"></script>
+<script src="js/fjs.js"></script>

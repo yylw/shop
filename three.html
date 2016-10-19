@@ -1,0 +1,105 @@
+<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/dindex.css">	
+<section id="shopping">
+				<div class="top">
+					<div class="niv">
+					  <a href="" class="ok" onclick="aa(0)">人气</a>
+					  <a href="" onclick="aa(1)">上新</a>
+					  <a href="" onclick="aa(2)">销量</a>
+					  <a href="" onclick="aa(3)">折扣</a>
+					  <a href="" onclick="aa(4)">时尚</a>
+                    </div>
+				</div>
+				<div class="bottom">
+					<div id="people">
+						<div class="min">
+							<dl>
+								<dd><img src="images/min1.png"></dd>
+								<dt>
+									<p>2014人气款短袖雪纺连衣裙夏季韩版女装拼接大码宽松显瘦纽扣衫</p>
+									<span>24.80</span>
+									<span>15693</span>
+								</dt>
+							</dl>
+							<dl>
+								<dd><img src="images/min2.png"></dd>
+								<dt>
+									<p>2014人气爆款女装包邮韩版时尚格子雪纺圆领短袖T恤韩俊美琦</p>
+									<span>24.80</span>
+									<span>15693</span>
+								</dt>
+							</dl>
+						</div>
+					</div>
+					<div id="new">
+						<div class="min">
+							<dl>
+								<dd><img src="images/min5.png"></dd>
+								<dt>
+									<p>2014春夏新装性感大气网纱拼接柔软透视连衣裙雪纺上衣女装</p>
+									<span>48.51</span>
+									<span>19635</span>
+								</dt>
+							</dl>
+							<dl>
+								<dd><img src="images/min6.png"></dd>
+								<dt>
+									<p>2014新款韩版女装一字领显瘦收腰蕾丝露肩性感白色上衣雪纺衫</p>
+									<span>29.50</span>
+									<span>15693</span>
+								</dt>
+							</dl>
+						</div>
+					</div>
+					<div id="num">
+						<div class="min">
+							<dl>
+								<dd><img src="images/min7.png"></dd>
+								<dt>
+									<p>韩版修身女装飘逸白色夏装裙 无袖背心拖地长裙雪纺连衣裙夏 2014</p>
+									<span>158.00</span>
+								</dt>
+							</dl>
+						</div>
+					</div>
+					<div id="zhe">
+						<div class="min">
+							<dl>
+								<dd><img src="images/27.png"></dd>
+								<dt>
+									<p>韩版修身女装飘逸白色夏装裙 无袖背心拖地长裙雪纺连衣裙夏 2014</p>
+									<span>126.00</span>
+								</dt>
+							</dl>
+						</div>
+					</div>
+					<div id="fashion">
+						<div class="min">
+							<dl>
+								<dd><img src="images/21.png"></dd>
+								<dt>
+									<p>2014夏季新款松糕厚底鞋女鞋凉鞋潮鞋学生鞋韩版欧美街头时尚个性</p>
+									<span>35.00</span>
+									<p>流行元素：松糕鞋、防水台、皮带扣 罗</p>
+								</dt>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+<script>
+	function aa(){
+		$(this).addClass('ok').siblings().removeClass('ok');
+		var idx=$(this).index();
+		$(".bottom > div").eq(idx).show().siblings().hide();
+	}
+	$("#shopping .niv").live("click","a",function(){
+			
+		$(this).addClass('ok').siblings().removeClass('ok');
+		var idx=$(this).index();
+		$(".bottom > div").eq(idx).show().siblings().hide();
+	})
+</script>

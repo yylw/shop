@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telphone=no">
+	<meta name="format-detection" content="email=no">
+	<title>二维码扫描</title>
+	<link rel="stylesheet" href="css/cstyle.css">
+	<link rel="stylesheet" href="css/reset.css">
+</head>
+<style>
+	.wrap a{
+		text-decoration: none;
+	}
+	.wrap header{
+		width: 100%;
+		height: 48px;
+		background: #33d6ff;
+		position: relative;
+	}
+	.wrap header a:first-of-type{
+		width: 60px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		color: #fff;
+		background: url(images/1.png) no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		left: 10px;
+		top:10px;
+	}
+	.wrap header h2{
+		padding:0 53px;
+		font-size:18px;
+		color:#fff;
+		text-align:center;
+		line-height:48px;
+		font-weight:normal;
+		text-shadow:1px 1px 1px #000;
+		text-overflow:ellipsis;
+		overflow:hidden;
+		white-space:nowrap;
+	}
+	.wrap header a:last-of-type{
+		width: 60px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		color: #fff;
+		background: url(images/1.png) no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		right: 10px;
+		top:10px;
+	}
+</style>
+<body>
+	<box class="wrap">
+		<header>
+			<a href="A_1.html">返回</a>
+			<h2>购霸</h2>
+			<a href="#">搜素</a>
+		</header>
+		<!-- <header class="header">
+			<div class="leftBtn"><input type="button" value="返回"></div>
+			<h1 class="title">二维码扫描</h1>
+			<div class="rightBtn" style="display: none;"><input type="button" value="保存"></div>
+		</header> -->
+		<section class="contain">
+			<div class="con erweima_con">
+				<dl>
+					<dt><img class="wei1" src="img/c1.png" alt=""><img class="wei2" src="img/c2.png" alt=""></dt>
+					<dd>请对准你要扫描的二维码</dd>
+				</dl>
+			</div>
+		</section>
+	</box>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿
+		<section>
+			<div class="aMainBox">
+				<div class="aMainBox1">
+					
+				
+					<ul>
+						<li>
+							<input type="radio">
+							<dl>
+								<dt><img src="images/min4.png" style="width:5rem;"></dt>
+								<dd>
+									<h6>2014夏装新款连衣裙 甜美冰淇淋撞色宽松大码女装雪纺裙 Q28</h6>
+									<p>尺码：均码<span>腰型：宽松腰</span></p>
+									<p>数量：1<span>价格：36.00</span></p>
+								</dd>
+							</dl>
+						</li>
+						<li class="none">
+							<input type="radio">
+							<dl>
+								<dt><img src="images/A_38.png" style="width:5rem;"></dt>
+								<dd>
+									<h6>2014夏装新款连衣裙 甜美冰淇淋撞色宽松大码女装雪纺裙 Q28</h6>
+									<p>尺码：L<span>颜色分类：图片</span></p>
+									<p>数量：1<span>价格：72.00</span></p>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+				<p class="ap apBottom"><input type="radio">查看:￥78.00 <button class="goPay"><a href="eindex2.html" style="color: #fff">去结算</a></button></p>
+
+		</section>
+
+
+<script>
+	
+	$("#shopping .niv").live("click","a",function(){
+			
+			$(this).addClass('ok').siblings().removeClass('ok');
+			var idx=$(this).index();
+			$(".bottom > div").eq(idx).show().siblings().hide();
+		})
+
+		$(".nav").on("click","a",function(){
+			alert(1)
+			$(this).addClass('ok').siblings().removeClass('ok');
+		})
+</script>

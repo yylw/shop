@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>找宝贝</title>
+	<meta http-equiv="X-UA_Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="email=no"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/reset.css">	
+	<link rel="stylesheet" href="css/B_style.css">
+</head>
+<style>
+	html,body,.box{
+		width:100%;
+		height: 100%;
+	}
+	.box{
+		display: -webkit-box;
+		-webkit-box-orient:vertical;
+		overflow: hidden;
+	}
+	.box header{
+		width: 100%;
+		height: 48px;
+		background: #33d6ff;
+		position: relative;
+	}
+	.box header a:first-of-type{
+		width: 60px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		color: #fff;
+		background: url(images/1.png) no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		left: 10px;
+		top:10px;
+	}
+	.box header h2{
+		padding:0 53px;
+		font-size:18px;
+		color:#fff;
+		text-align:center;
+		line-height:48px;
+		font-weight:normal;
+		text-shadow:1px 1px 1px #000;
+		text-overflow:ellipsis;
+		overflow:hidden;
+		white-space:nowrap;
+	}
+	.box header a:last-of-type{
+		width: 60px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		color: #fff;
+		background: url(images/1.png) no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		right: 10px;
+		top:10px;
+	}
+	.box .main{
+		-webkit-box-flex:1;
+	}
+	.box .footer{
+		width: 100%;
+		height: 50px;
+		background: #343434;
+		position: relative;
+		z-index: 5;
+	}
+	.box .footer ul{
+		display: -webkit-box;
+		line-height: 50px;
+		position: relative;
+		z-index: 2;
+	}
+	.box .footer ul li{
+		width: 20%;
+		text-align: center;
+		padding-top: 10px;
+	}
+	.box .footer ul li i{
+		color: #fff;
+		font-size: 16px;
+		font-weight: normal;
+		display: block;
+	}
+	.box .footer ul li a{
+		color: #fff;
+		font-size: 14px;
+	}
+	.box .footer ul .on i{
+		color: #33b6be;
+	}
+	.box .footer ul .on{
+		background: #494949;
+	}
+</style>
+<body  ng-controller="ctrl">
+	<div class="box">
+		<header>
+			<a href="#">返回</a>
+			<h2>个人资料设置</h2>
+			<a href="#">确定</a>
+		</header>
+
+		<section class="main" id="content">
+			<!-- 个人资料 -->
+			<div class="ziliao">
+				<ul>
+					<li><span><img src="images/B_head.jpg" alt=""></span><input type="button" value="设置头像"></li>
+					<li><span>昵称</span><input type="text" value="闺蜜,拿命爱"></li>
+					<li><span>美丽宣言</span><input type="text" value="鱼离不开水，女人离不开美丽！"></li>
+					<li></li>
+				</ul>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

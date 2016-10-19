@@ -1,0 +1,257 @@
+#find_best {
+  display: -webkit-box;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+#content {
+  width: 100%;
+  height: 100%;
+  background: #f3eff0;
+}
+#left {
+  width: 6rem;
+  border-right: 1px solid #ccc;
+  margin-top: 3.5rem;
+  height: 100%;
+}
+#left #menu {
+  width: 100%;
+}
+#left a {
+  display: block;
+  -webkit-box-flex: 1;
+  text-align: center;
+  line-height: 3rem;
+  padding: .5rem 0;
+  font-weight: bold;
+  color: #656766;
+  background: url(../images/B_bg.png) no-repeat center bottom;
+  background-size: 80% auto;
+}
+#left a:last-child {
+  background: none;
+}
+#left a.high {
+  color: #80def8;
+}
+.bl {
+  color: #80def8;
+  line-height: 3rem;
+  font-size: 1.4rem;
+}
+.dec {
+  width: 100%;
+  margin-top: .5rem;
+}
+.dec img {
+  width: 43%;
+  margin: .1rem;
+}
+#right {
+  -webkit-box-flex: 1;
+  height:100%;
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+}
+#right > section {
+  margin-left: 1rem;
+}
+.tui {
+  line-height: 3rem;
+}
+#data_goods{
+   -webkit-box-flex:1;
+}
+.tui span {
+  padding: .3rem 1rem;
+  background: #fff;
+  color: #747474;
+  margin-right: .5rem;
+  border-radius: 1.5rem;
+}
+.B_one{
+  width:100%;
+}
+.B_one img{
+  width: 100%;
+}
+.s3 {
+  width: 100%;
+}
+.s3 img {
+  width: 31%;
+}
+#search {
+  width: 95%;
+  display: block;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  margin-top: .8rem;
+  margin-left: -1rem;
+  background: #ffffff url(../images/B_search.png) no-repeat 93% center;
+  background-size: 15px auto;
+  border-radius: 10px;
+  line-height: 2rem;
+}
+.B_banner {
+  width: 100%;
+  height: auto;
+}
+.B_banner img {
+  width: 100%;
+}
+.B_list {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  display: -webkit-box;
+}
+.B_list dl {
+  width: 50%;
+  display: -webkit-box;
+  padding: 2% 5%;
+  box-sizing: border-box;
+  border-right: 1px solid #ccc;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+.B_list dl dt {
+  width: 25%;
+  margin-right: 1rem;
+}
+.B_list dl dt img {
+  width: 100%;
+  height: auto;
+}
+.B_list dl dd {
+  -webkit-box-flex: 1;
+}
+.button {
+  width: 100%;
+}
+.button button {
+  width: 90%;
+  background: #ff7d67;
+  border-radius: 10px;
+  color: #fff;
+  line-height: 2rem;
+  margin: 0 auto;
+  display: block;
+}
+.B_center {
+  width: 90% !important;
+  margin: 10px auto !important;
+  border-bottom: none !important;
+}
+.B_myList {
+  background: #fff;
+  width: 80%;
+  border: 1px solid #ccc;
+  margin: 1rem 0 0 1rem;
+}
+.B_myList ul {
+  width: 100%;
+}
+.B_myList ul li {
+  padding: 0 .5rem;
+  line-height: 3rem;
+  border-bottom: 1px solid #ccc;
+}
+.B_myList ul li a {
+  line-height: 3rem;
+  color: #555;
+  width: 100%;
+}
+.B_myList ul li span {
+  float: right;
+  line-height: 3rem;
+}
+.B_myList ul li b {
+  width: 6rem;
+  display: inline-block;
+}
+.B_myList ul li input {
+  border: none;
+  outline: none;
+}
+.B_myList ul li i {
+  margin-right: .5rem;
+}
+.ziliao {
+  width: 100%;
+}
+.ziliao ul {
+  width: 100%;
+}
+.ziliao ul li {
+  line-height: 4rem;
+  width: 100%;
+  color: #999;
+  height: 4rem;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #fff;
+  display: -webkit-box;
+  padding-left: 1rem;
+}
+.ziliao ul li:first-child {
+  border-top: none;
+}
+.ziliao ul li:last-child {
+  border-bottom: none;
+}
+.ziliao ul li span {
+  width: 6rem;
+  display: block;
+  line-height: 4rem;
+}
+.ziliao ul li span img {
+  width: 50%;
+  vertical-align: middle;
+}
+.ziliao ul li input {
+  display: block;
+  text-align: left;
+  -webkit-box-flex: 1;
+  border: none;
+  background: none;
+  color: #999;
+  outline: none;
+}
+.A_tuijian{
+  width: 100%;
+  margin-top: 1rem;
+}
+.A_tuijian dd img{
+  width:100%;
+  margin: 0.3rem; 
+}
+.A_tuijian dl{
+ margin-right:2%;
+  width:30%;
+  float:left;
+}
+.A_tuijian dl dt{
+  text-align: center;
+  line-height:25px;
+}
+.A_newset{
+  width: 100%;
+  margin-top: 1rem;
+}
+.A_newset dd img{
+  width:100%;
+  margin: 0.3rem; 
+}
+.A_newset dl{
+ margin-right:2%;
+  width:30%;
+  float:left;
+}
+.A_newset dl dt{
+  text-align: center;
+  line-height:25px;
+}
